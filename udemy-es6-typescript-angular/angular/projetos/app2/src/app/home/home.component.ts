@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { OfertasService } from "../ofertas.service";
-import { log } from "util";
+import { Oferta } from "../shared/oferta.model";
 
 @Component({
   selector: "app-home",
@@ -9,9 +9,18 @@ import { log } from "util";
   providers: [OfertasService]
 })
 export class HomeComponent implements OnInit {
+  public ofertas: Oferta[];
+
   constructor(private ofertaService: OfertasService) {}
 
   ngOnInit() {
-    console.log(this.ofertaService.getOfertas());
+    // this.ofertas = this.ofertaService.getOfertas();
+    // console.log(this.ofertas);
+    this.ofertaService.getOferta2().then(
+      (ofertas: Oferta[]) => {
+        this.ofertas = ofertas;
+      },
+      (param: any) => console.log(param)
+    );
   }
 }
