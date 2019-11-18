@@ -33,7 +33,7 @@ export class TopoComponent implements OnInit {
   ngOnInit() {
     this.ofertas = this.subjectPesquisa.pipe(
       debounceTime(1000), // Executa ação switchMap depois de 1 segundo
-      distinctUntilChanged(),
+      distinctUntilChanged(), // Para fazer pesquisas distintas
       switchMap((termo: string) => {
         console.log('Requisição HTTP');
         if (termo.trim() === '') {

@@ -1,11 +1,11 @@
-import { Component, OnInit } from "@angular/core";
-import { Oferta } from "../shared/oferta.model";
-import { OfertasService } from "../ofertas.service";
+import { Component, OnInit } from '@angular/core';
+import { Oferta } from '../shared/oferta.model';
+import { OfertasService } from '../ofertas.service';
 
 @Component({
-  selector: "app-restaurante",
-  templateUrl: "./restaurante.component.html",
-  styleUrls: ["./restaurante.component.scss"],
+  selector: 'app-restaurante',
+  templateUrl: './restaurante.component.html',
+  styleUrls: ['./restaurante.component.scss'],
   providers: [OfertasService]
 })
 export class RestauranteComponent implements OnInit {
@@ -14,10 +14,8 @@ export class RestauranteComponent implements OnInit {
   constructor(private ofertasService: OfertasService) {}
 
   ngOnInit() {
-    this.ofertasService
-      .getOfertasPorCategoria("restaurante")
-      .then((ofertas: Oferta[]) => {
-        this.ofertas = ofertas;
-      });
+    this.ofertasService.getOfertasPorCategoria('restaurante').then((ofertas: Oferta[]) => {
+      this.ofertas = ofertas;
+    });
   }
 }
