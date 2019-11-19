@@ -11,6 +11,7 @@ import { OfertaComponent } from './oferta/oferta.component';
 import { RestauranteComponent } from './restaurante/restaurante.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { TopoComponent } from './topo/topo.component';
+import { DescricaoReduzida } from './util/descricao-reduzida.pipe';
 // import { registerLocaleData } from '@angular/common';
 // import localeBr from '@angular/common/locales/pt';
 // registerLocaleData(localeBr, 'pt');
@@ -23,7 +24,8 @@ import { TopoComponent } from './topo/topo.component';
     TopoComponent,
     RestauranteComponent,
     DiversaoComponent,
-    OfertaComponent
+    OfertaComponent,
+    DescricaoReduzida
   ],
   imports: [BrowserModule, AppRoutingModule, HttpModule, RouterModule.forRoot(ROUTES)],
   providers: [
