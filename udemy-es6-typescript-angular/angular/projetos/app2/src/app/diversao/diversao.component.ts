@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, Params } from "@angular/router";
 import { OfertasService } from "./../ofertas.service";
 import { Oferta } from "./../shared/oferta.model";
 
@@ -18,6 +19,7 @@ export class DiversaoComponent implements OnInit {
       .getOfertasPorCategoria("diversao")
       .then((ofertas: Oferta[]) => {
         this.ofertas = ofertas;
-      });
+      })
+      .catch((param: any) => console.log(param));
   }
 }

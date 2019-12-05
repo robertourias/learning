@@ -1,17 +1,17 @@
 .navbar {
-  background: #FFF;
+  background: #fff;
 }
 
 .menu {
-  background: #006ACB
+  background: #006acb;
 }
 
 .nav-link {
-  color: #C1E4FF
+  color: #c1e4ff;
 }
 
 .nav-link:hover {
-  color: #FFF
+  color: #fff;
 }
 
 .banner {
@@ -20,13 +20,14 @@
 
 .banner img {
   width: 100%;
-  height: 230px
+  height: 230px;
 }
 
 .active {
-  color: #FFF
+  color: #fff;
 }
 
 .list-group-search {
   position: absolute;
+  z-index: 999;
 }
