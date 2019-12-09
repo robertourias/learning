@@ -1,0 +1,37 @@
+{
+  "editor.autoIndent": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  },
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 100,
+  "editor.codeLens": false,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorStyle": "line",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.letterSpacing": 0.5,
+  "editor.lineHeight": 25,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": {
+      "when": "$(basename)"
+    }
+  },
+  "editor.formatOnSave": true,
+  "javascript.preferences.quoteStyle": "single"
+}

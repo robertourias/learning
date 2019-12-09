@@ -14,6 +14,7 @@ import { RestauranteComponent } from "./restaurante/restaurante.component";
 import { RodapeComponent } from "./rodape/rodape.component";
 import { TopoComponent } from "./topo/topo.component";
 import { DescricaoReduzida } from "./util/descricao-reduzida.pipe";
+import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
 // import { registerLocaleData } from '@angular/common';
 // import localeBr from '@angular/common/locales/pt';
 // registerLocaleData(localeBr, 'pt');
@@ -29,7 +30,8 @@ import { DescricaoReduzida } from "./util/descricao-reduzida.pipe";
     OfertaComponent,
     ComoUsarComponent,
     OndeFicaComponent,
-    DescricaoReduzida
+    DescricaoReduzida,
+    OrdemCompraComponent
   ],
   imports: [
     BrowserModule,
